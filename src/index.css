@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Tickets List Cards */
+.ticket-card {
+  border: 2px solid #007bff;
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ticket-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.ticket-status {
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 4px;
+  color: white;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.ticket-status.open {
+  background-color: #dc3545; /* red */
+}
+
+.ticket-status.closed {
+  background-color: #28a745; /* green */
+}
+
+.ticket-status.pending {
+  background-color: #ffc107; /* orange */
+}
+
+.view-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.view-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
